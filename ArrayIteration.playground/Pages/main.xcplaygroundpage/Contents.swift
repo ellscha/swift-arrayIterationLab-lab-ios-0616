@@ -73,8 +73,12 @@ for item in cart{
  */
 // write your code here
 
-
-
+func printItem (item: String){
+    print(item)
+}
+for item in cart {
+    printItem(item)
+}
 
 
 
@@ -82,10 +86,18 @@ for item in cart{
  ### 7. Create a function that takes an array of Ints (40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49) and returns an array of Ints. This function should look through the array of Ints and create a new array of Ints that only contain integers less than 50.
  */
 // write your code here
+func underFifty (numbers:[Int])-> [Int] {
+    var arrayUnderFifty : [Int] = []
+    for num in numbers {
+        if num < 50 {
+            arrayUnderFifty.append(num)
+        }
+    }
+    return arrayUnderFifty
+}
 
 
-
-
+underFifty([40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49])
 
 
 
