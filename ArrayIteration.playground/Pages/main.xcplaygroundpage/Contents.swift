@@ -14,7 +14,7 @@
  ### 1. You're building an app and want to store all of the ingredients added to a cart. How would you represent this cart in code? The ingredients are "Chips", "Salsa", "Guacamole", "Red wine". Explicitly mark the content of the cart as strings.
  */
 // write your code here
-
+var cart : [String] = ["Chips", "Salsa", "Guacamole", "Red Wine"]
 
 
 
@@ -24,7 +24,7 @@
  ### 2. You need to create a list that contains the numbers from 1 to 10. How would you represent this list in code? Explicitly mark the content of the cart as numbers.
  */
 // write your code here
-
+let numList : [Int] = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -35,7 +35,9 @@
  ### 3. Take the list of numbers you created in question 2 and print their values in the most efficient way possible.
  */
 // write your code here
-
+for num in numList{
+    print(num)
+}
 
 
 
@@ -46,7 +48,9 @@
  ### 4. Take the list of shopping cart items you created in question 1 and print their values in the most efficient way possible. Prefix each item in the array with a string of text.
  */
 // write your code here
-
+for item in cart{
+    print("We need \(item)")
+}
 
 
 
